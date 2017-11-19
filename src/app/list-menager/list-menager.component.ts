@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoListService } from '../todo-list.service';
 
 @Component({
   selector: 'todo-list-menager',
@@ -17,18 +18,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListMenagerComponent implements OnInit {
   title: String = 'To do List';
-  todoList = [
-    {title: 'do shopping'},
-    {title: 'cleaning'},
-   ];
-   addItem(title: string): void {
-     this.todoList.push({title});
-   }
-  constructor() { }
+  todoList = [];
+  addItem(item): void {
+    this.todoListService.addItem(item);
+  }
+   constructor(private todoListService: TodoListService) { }
 
   ngOnInit() {
+    this.todoList = this.todoListService.getTodoList();
   }
-
 }
+
 
 
