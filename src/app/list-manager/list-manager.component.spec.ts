@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListMenagerComponent } from './list-menager.component';
+import { ListManagerComponent } from './list-manager.component';
 
-describe('ListMenagerComponent', () => {
-  let component: ListMenagerComponent;
-  let fixture: ComponentFixture<ListMenagerComponent>;
+describe('ListManagerComponent', () => {
+  let component: ListManagerComponent;
+  let fixture: ComponentFixture<ListManagerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListMenagerComponent ]
+      declarations: [ ListManagerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListMenagerComponent);
+    fixture = TestBed.createComponent(ListManagerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

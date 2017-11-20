@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { TodoListService } from './todo-list.service';
-import { TodoListStorageService } from './todo-list-storage.service';
 
 import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
 import { ItemComponent } from './item/item.component';
-import { ListMenagerComponent } from './list-menager/list-menager.component';
+import { ListManagerComponent } from './list-manager/list-manager.component';
+import { TodoListService } from './todo-list.service';
+import { TodoListStorageService } from './todo-list-storage.service';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { ListMenagerComponent } from './list-menager/list-menager.component';
     AppComponent,
     InputComponent,
     ItemComponent,
-    ListMenagerComponent
+    ListManagerComponent
   ],
   imports: [
     BrowserModule
